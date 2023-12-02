@@ -1,0 +1,94 @@
+/************************
+    Globales
+*************************/
+:root{
+    --fuente:'Roboto', sans-serif;
+}
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family:var(--fuente);
+    font-size:1.6rem;
+    margin:0;
+    overflow-x:hidden;
+    transition: 1s ease-in-out;
+}
+
+a{text-decoration:none;}
+
+img{width:100%;}
+.container{
+    width: 80%;
+    overflow:hidden;
+    display: table;
+    position: relative;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+/************************
+    Hero
+*************************/
+.hero{
+    background-image: url('../img/skynight.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .btn{
+    background-color: #07233d;
+    color: white;
+    padding: 1.5rem 5rem;
+    border-radius: 6px;
+    box-shadow: 7px 5px 9px #040404;
+    font-size: 2.3rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: all 300ms;
+
+}
+.hero .btn:hover{
+    box-shadow: none;
+}
+/************************
+     numero-dos
+*************************/
+.numero-dos{
+    background-color: #02030a;
+    height: 200vh;
+}
+
+/************************
+     numero-tres
+*************************/
+.numero-tres{
+    background: rgb(210,210,210);
+    background: linear-gradient(180deg, rgb(2 3 10) 0%,    rgba(7 35 61) 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.numero-tres .caja{
+    width: 50%;
+    height: 50%;
+    border: 1px solid #2fe0ff;
+    transition: all 1s;
+
+}
+
+.hide{
+    opacity:0;
+    width: 0!important;
+    height: 0!important;
+    transition: all 1s;
+}
